@@ -1,0 +1,459 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 20, 2017, 1:03:12 PM
+    Author     : kowsh
+*/
+@font-face {
+    font-family: AvenirLTStd;
+    src: url('../fonts/AvenirLTStd.otf');
+}
+@font-face {
+    font-family: AvenirLTStd_Heavy;
+    src: url('../fonts/AvenirLTStd_Heavy.otf');
+}
+body{
+    font-size: 11px;
+    font-family: AvenirLTStd ;
+    font-weight: bold;  
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 980px;
+}
+.navBar{
+    padding: 10px 0;
+    font-family: AvenirLTStd_Heavy;
+    letter-spacing: 0.5px;
+}
+.navContent{
+    float: left;
+}
+.shippingContent{
+    font-family: AvenirLTStd;
+}
+.nav_header{
+    float: right
+}
+.nav_header ul li{
+    display: inline-block;
+    margin-left: 35px;    
+}
+.nav_header ul li:first-child{
+    margin-left: 0;
+}
+.nav_header ul li a{
+    text-decoration: none;
+}
+.clear{
+    clear: both;
+}
+.logo{
+/*    color: #fff;
+    font-size: 18px;
+    padding: 17px 40px;
+    background-color: #82001c;
+    border-radius: 5px;*/
+width: 158px;
+  height: 52px;
+  
+}
+.logo a{
+    width: 100%;
+    display: block;
+    height: 52px;
+    background: #ffffff url("../images/logo.png") no-repeat right top;
+    background-size: contain;
+}
+.headerContent > div{
+    display: inline-block;
+    float: left;
+}
+.headerContent{
+    padding: 13px 0;
+}
+.headerContent > div+div{
+    padding-left: 8%;
+    color: #82001c;
+    height: 52px;
+/*    position: relative;
+    top: 8px;*/
+}
+.findBy{
+}
+.headerContent > div+div > div{
+    padding-top: 10px;
+}
+.clasification{
+    font-size: 16px;
+    font-weight: bold; 
+    font-family: AvenirLTStd_Heavy;
+}
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 11px solid #82001c;
+    position: relative;
+    top: 16px;
+    left: 7px;
+}
+
+.headerContent .call{
+    float: right;
+    text-align: right;
+    padding-left: 0;
+}
+.dropdown-content{
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    display: none;
+}
+.dropdown-content a {
+    color: #82001c;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.navigation{
+    background-color: #ffdd00;
+    padding: 10px 0;
+    font-size: 12px;
+    margin-top: 15px;
+    letter-spacing: 0.75px;
+}
+.separator{
+        padding: 0 8px;
+    }
+h1{
+    font-size: 50px;
+    margin-top: 65px;
+    margin-bottom: 25px;
+    font-family: Oswald;
+    font-weight: 500;
+}
+h2{
+    font-size: 14px;
+    font-family: AvenirLTStd_Heavy;
+}
+.mainContent{
+    margin-bottom: 100px;
+}
+.leftContainer{
+    width:15%;
+    display: inline-block;
+    float: left;
+    margin-right: 3%;
+}
+.leftContainer ul{
+    margin-top: 25px;
+}
+.leftContainer ul li{
+    list-style-type: none;
+    padding: 10px 0;
+    clear: both;
+
+}
+.filterContent, .filterArrow{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 120%;
+    font-size: 14px;
+}
+.filterContent{
+    width:90%;
+}
+.filterArrow{
+    width: 7%;
+    text-align: right;
+    display: none;
+}
+.leftContainer li:hover .filterArrow,.active .filterArrow{
+    display: inline-block
+}
+.leftContainer li.active,.leftContainer li:hover{
+    font-family: AvenirLTStd_Heavy;
+}
+.leftContainer ul li+li{
+    border-top: 1px solid gray
+}
+
+.rightContainer{
+    display: inline-block;
+    width: 82%;
+    float: left;
+}
+.tableContainer{
+    width: 100%;
+    float: left;
+}
+.tableContent{
+    display: table;
+    border-collapse:collapse;
+    width: 100%;
+    table-layout:fixed;
+}
+.row{
+    width: 50%;
+    box-sizing: border-box;
+    display: table-row;
+}
+.col{
+    display: table-cell;
+    border:1px solid black;
+    padding: 18px 22px;
+    width:25%;
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom:20px;
+}
+.rightContainer .tableContainer+.tableContainer .col{
+    border-top: 0;
+}
+.productImage{
+    /* background-image: url("../images/DSC_5994.jpg");*/
+    height: 156px;
+    width: 100%;
+}
+/*
+.image1{
+    background: #ffffff url("../images/1.jpg") no-repeat right top;
+    background-size: contain;
+}
+.image2{
+    background: #ffffff url("../images/lupe-fiasco-product-red-converse-all-star-01.jpg") no-repeat right top;
+    background-size: contain;
+}
+.image3{
+    background: #ffffff url("../images/511485976.jpg") no-repeat right top;
+    background-size: contain;
+}
+.image4{
+    background: #ffffff url("../images/1358338402Intel_Reader_ProductShot.jpg") no-repeat right top;
+    background-size: contain;
+}
+.image5{
+    background: #ffffff url("../images/1467966472-logo-img-product-db.jpg") no-repeat right top;
+    background-size: contain;
+}
+.image6{
+    background: #ffffff url("../images/products-camp-kitchen-thumb.jpg") no-repeat right top;
+    background-size: contain;
+}
+.image7{
+    background: #ffffff url("../images/DSC_5994.jpg") no-repeat right top;
+    background-size: contain;
+}
+.image8{
+    background: #ffffff url("../images/phil-teds-sport-inline-auto-stop-stroller-in-midnight-3-4-view_product_large.jpg") no-repeat right top;
+    background-size: contain;
+}
+.image9{
+    background: #ffffff url("../images/oink-final.jpg") no-repeat right top;
+    background-size: contain;
+}
+.image10{
+    background: #ffffff url("../images/iPhone6_34FR_SpGry_iPhone6plus_34FL_SpGry_Homescreen_HERO.jpg") no-repeat right top;
+    background-size: contain;
+}
+.image11{
+    background: #ffffff url("../images/oculus-touch-product-394x263-c.jpg") no-repeat right top;
+    background-size: contain;
+}
+.image12{
+    background: #ffffff url("../images/design_of_useful_things.jpg") no-repeat right top;
+    background-size: contain;
+}*/
+.productImage img{
+    max-width: 100%;
+    height: 150px;
+}
+.product{
+    display: table;
+    position: relative;
+    width: 100%;
+}
+.productDesc{
+    font-size: 13px;
+    text-align: left;
+}
+.col:hover .overlay{
+    display: block;
+}
+.col:hover .productImage,.col:hover .productDesc{
+    opacity: 0.5
+}
+.overlay{
+    font-size: 18px;
+    border: 1px solid #82001c;
+    padding: 6% 19%;
+    text-align: center; 
+    color: #82001c;
+    background: #fff;
+    position: absolute;
+    top: 33%;
+    left: 20%;
+    display: none;
+    cursor: pointer;
+}
+.headerContent > div+div:hover  .dropdown-content{
+    display: block;
+}
+.logoMobile{
+    display: none;;
+}
+.toggle-nav {
+    display:none;
+}
+@media screen and (max-width: 1024px){
+    .leftContainer{
+        display: none;
+    }
+    .rightContainer{
+        width: 100%;
+    }
+    h1{
+        display: none;
+    }
+    .col{
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        padding-bottom: 30px;
+    }
+    .productDesc{
+        position: absolute;
+        bottom:-10px;
+    }
+    .col:nth-child(2),.col:last-child {
+        border-left: 0 
+    }
+    .col:nth-child(3),.col:last-child {
+        border-top: 0 
+    }
+    .navContent{
+        display: none;
+    }
+    .logoMobile{
+        position: absolute;
+        left: 0;
+        padding-top: 10px;
+        display: block;
+        width: 60%;
+        z-index: 100;
+        margin: 0 20%;
+    }
+    .logoMobile div{
+        padding: 15px 35px;
+    background: #fff;
+    color: #303030;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 40px;
+    text-align: center;
+        
+        
+    }
+    nav{
+        position: relative;
+        display: inline-block;
+    }
+    nav ul.active{
+        display: none;
+    }
+    nav ul{
+        width:100%;
+        position:absolute;
+        top:60px;
+        left:0px;
+        background:#82001c;
+        color: #fff;
+        z-index: 10;
+    }
+    .nav_header{
+        float: none;
+        display: block;
+    }
+    .nav_header ul li{
+        margin-left: 0;
+        display: block;
+        padding: 20px;
+    }
+    .container{
+        width:100%;
+    }
+    .toggle-nav {
+        display:block;
+    }
+    .toggle-nav {
+        padding:20px;
+        float:left;
+        display:inline-block;
+        border-radius:3px;
+        background:#82001c;
+        color:#fff;
+        font-size:20px;
+        transition:color linear 0.15s;
+        text-decoration: none;
+        z-index: 1;
+    }
+    .navBar{
+        padding: 0;
+    }
+    header{
+        background: #82001c;
+        color: #fff;
+    }
+    .headerContent {
+        padding: 13px 20px;
+    }
+    .headerContent .logo,.headerContent .call {
+        display: none;
+    }
+    .headerContent > div+div{
+        color: #fff;
+    }
+    .headerContent > div+div{
+        top:0;
+        width: 32%;
+        padding: 0;
+    }
+    .headerContent div:nth-child(4){
+        text-align: right;
+    }
+    .navigation{
+        padding: 10px 20px; 
+        margin-top: 0;
+    }
+    .arrow-down{
+        border-top-color: #fff;
+    }
+    .mainContent{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .productDesc{
+        bottom:-17px;
+    }
+    .productImage img{
+        height: 120px;
+    }
+    .productImage{
+        height:135px;
+    }
+} 
