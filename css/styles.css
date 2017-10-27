@@ -80,7 +80,7 @@ width: 158px;
     padding: 13px 0;
 }
 .headerContent > div+div{
-    padding-left: 8%;
+    padding-left: 11%;
     color: #82001c;
     height: 52px;
 /*    position: relative;
@@ -118,6 +118,7 @@ width: 158px;
     min-width: 160px;
     overflow: auto;
     display: none;
+    z-index: 10;
 }
 .dropdown-content a {
     color: #82001c;
@@ -153,10 +154,10 @@ h2{
     margin-bottom: 100px;
 }
 .leftContainer{
-    width:15%;
+    width:16.5%;
     display: inline-block;
     float: left;
-    margin-right: 3%;
+    margin-right: 4%;
 }
 .leftContainer ul{
     margin-top: 25px;
@@ -193,7 +194,7 @@ h2{
 
 .rightContainer{
     display: inline-block;
-    width: 82%;
+    width: 79.5%;
     float: left;
 }
 .tableContainer{
@@ -214,18 +215,18 @@ h2{
 .col{
     display: table-cell;
     border:1px solid black;
-    padding: 18px 22px;
+    padding: 10px 22px;
     width:25%;
     text-align: center;
     vertical-align: middle;
-    padding-bottom:20px;
+    height: 172px;
 }
 .rightContainer .tableContainer+.tableContainer .col{
     border-top: 0;
 }
 .productImage{
     /* background-image: url("../images/DSC_5994.jpg");*/
-    height: 156px;
+    height: 146px;
     width: 100%;
 }
 /*
@@ -279,7 +280,7 @@ h2{
 }*/
 .productImage img{
     max-width: 100%;
-    height: 150px;
+    height: 140px;
 }
 .product{
     display: table;
@@ -333,10 +334,14 @@ h2{
         float: left;
         box-sizing: border-box;
         padding-bottom: 30px;
+        border: none;
+        padding: 0;
+        padding-top: 20px;
+        height: auto;
     }
     .productDesc{
-        position: absolute;
-        bottom:-10px;
+        position: static;
+        font-family: Oswald;
     }
     .col:nth-child(2),.col:last-child {
         border-left: 0 
@@ -382,6 +387,9 @@ h2{
         background:#82001c;
         color: #fff;
         z-index: 10;
+    }
+    nav ul a{
+        color: #fff;
     }
     .nav_header{
         float: none;
@@ -437,23 +445,22 @@ h2{
     .navigation{
         padding: 10px 20px; 
         margin-top: 0;
+        line-height: 150%;
     }
     .arrow-down{
         border-top-color: #fff;
     }
     .mainContent{
         padding: 20px;
+        padding-top: 0;
     }
 }
 
 @media screen and (max-width: 480px){
-    .productDesc{
-        bottom:-17px;
-    }
-    .productImage img{
+/*    .productImage img{
         height: 120px;
     }
     .productImage{
         height:135px;
-    }
+    }*/
 } 
