@@ -32,6 +32,9 @@ a{
     padding: 10px 0;
     font-family: AvenirLTStd_Heavy;
     letter-spacing: 0.5px;
+    background: #ffffff url("../images/header_bf.jpg") no-repeat right top; 
+    background-size: contain;
+    color: #fff;
 }
 .navContent{
     float: left;
@@ -51,6 +54,7 @@ a{
 }
 .nav_header ul li a{
     text-decoration: none;
+    color: #fff;
 }
 .clear{
     clear: both;
@@ -90,6 +94,7 @@ width: 158px;
 }
 .headerContent > div+div > div{
     padding-top: 10px;
+    outline: none;
 }
 .clasification{
     font-size: 16px;
@@ -106,7 +111,18 @@ width: 158px;
     top: 16px;
     left: 7px;
 }
-
+.fa{
+display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-left: 5px;
+}
+.fa-search:before {
+    content: "\f002";
+}
 .headerContent .call{
     float: right;
     text-align: right;
@@ -362,15 +378,15 @@ h2{
         margin: 0 20%;
     }
     .logoMobile div{
-        padding: 15px 35px;
     background: #fff;
     color: #303030;
     border-radius: 5px;
     margin: 0 auto;
-    width: 40px;
+    width: 120px;
     text-align: center;
-        
-        
+    background: #82001c url("../images/logo_mobile.png") no-repeat;
+    background-size: contain;
+    height: 40px;
     }
     nav{
         position: relative;
@@ -420,9 +436,11 @@ h2{
     }
     .navBar{
         padding: 0;
+        background: none;
+        background-color: #82001c;
     }
     header{
-        background: #82001c;
+        background: #b20127;
         color: #fff;
     }
     .headerContent {
