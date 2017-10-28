@@ -91,6 +91,7 @@ a{
     font-size: 16px;
     font-weight: bold; 
     font-family: AvenirLTStd_Heavy;
+    padding-top: 2px;
 }
 .arrow-down {
     width: 0;
@@ -245,6 +246,7 @@ h2{
 .productDesc{
     font-size: 13px;
     text-align: left;
+    color: #464646;
 }
 .col:hover .overlay{
     display: block;
@@ -275,57 +277,35 @@ h2{
     display:none;
 }
 @media screen and (max-width: 1024px){
-    .leftContainer{
-        display: none;
+    .container{
+        width:100%;
     }
-    .rightContainer{
-        width: 100%;
+    header{
+        background: #b20127;
+        color: #fff;
     }
-    h1{
-        display: none;
-    }
-    .col{
-        width: 50%;
-        float: left;
-        box-sizing: border-box;
-        padding-bottom: 30px;
-        border: none;
+    .navBar{
         padding: 0;
-        padding-top: 20px;
-        height: auto;
+        background: none;
+        background-color: #82001c;
     }
-    .productDesc{
-        position: static;
-        font-family: Oswald;
+    .toggle-nav {
+        display:block;
     }
-    .col:nth-child(2),.col:last-child {
-        border-left: 0 
-    }
-    .col:nth-child(3),.col:last-child {
-        border-top: 0 
+    .toggle-nav {
+        padding:20px;
+        float:left;
+        display:inline-block;
+        border-radius:3px;
+        background:#82001c;
+        color:#fff;
+        font-size:20px;
+        transition:color linear 0.15s;
+        text-decoration: none;
+        z-index: 1;
     }
     .navContent{
         display: none;
-    }
-    .logoMobile{
-        position: absolute;
-        left: 0;
-        padding-top: 10px;
-        display: block;
-        width: 60%;
-        z-index: 100;
-        margin: 0 20%;
-    }
-    .logoMobile div{
-        background: #fff;
-        color: #303030;
-        border-radius: 5px;
-        margin: 0 auto;
-        width: 120px;
-        text-align: center;
-        background: #82001c url("../images/logo_mobile.png") no-repeat;
-        background-size: contain;
-        height: 40px;
     }
     nav{
         position: relative;
@@ -355,35 +335,28 @@ h2{
         display: block;
         padding: 20px;
     }
-    .container{
-        width:100%;
+    .logoMobile{
+        position: absolute;
+        left: 0;
+        padding-top: 10px;
+        display: block;
+        width: 60%;
+        z-index: 100;
+        margin: 0 20%;
     }
-    .toggle-nav {
-        display:block;
-    }
-    .toggle-nav {
-        padding:20px;
-        float:left;
-        display:inline-block;
-        border-radius:3px;
-        background:#82001c;
-        color:#fff;
-        font-size:20px;
-        transition:color linear 0.15s;
-        text-decoration: none;
-        z-index: 1;
-    }
-    .navBar{
-        padding: 0;
-        background: none;
-        background-color: #82001c;
-    }
-    header{
-        background: #b20127;
-        color: #fff;
+    .logoMobile div{
+        background: #fff;
+        color: #303030;
+        border-radius: 5px;
+        margin: 0 auto;
+        width: 120px;
+        text-align: center;
+        background: #82001c url("../images/logo_mobile.png") no-repeat;
+        background-size: contain;
+        height: 40px;
     }
     .headerContent {
-        padding: 13px 20px;
+        padding: 0 20px;
     }
     .headerContent .logo,.headerContent .call {
         display: none;
@@ -393,34 +366,75 @@ h2{
     }
     .headerContent > div+div{
         top:0;
-        width: 32%;
+        width: 33%;
         padding: 0;
+        height: auto;
+        padding-bottom: 15px;
+    }
+    .headerContent > div+div > div{
+        padding-top: 15px;
+    }
+    .headerContent .dropdown-content{
+        padding-top: 0;
     }
     .headerContent div:nth-child(4){
         text-align: right;
+    }
+    .arrow-down{
+        border-top-color: #fff;
+        top: 15px;
+        left: 3px;
+    }
+    .clasification{
+        font-size: 14px;
+    }
+    .headerContent div:nth-child(4) .clasification{
+        padding-top: 13px;
     }
     .navigation{
         padding: 10px 20px; 
         margin-top: 0;
         line-height: 150%;
     }
-    .arrow-down{
-        border-top-color: #fff;
+    .separator{
+        padding: 0 5px;
+    }
+    .leftContainer{
+        display: none;
+    }
+    .rightContainer{
+        width: 100%;
+    }
+    h1{
+        display: none;
+    }
+    .col{
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        padding-bottom: 30px;
+        border: none;
+        padding: 0;
+        padding-top: 20px;
+        height: auto;
     }
     .mainContent{
         padding: 20px;
         padding-top: 0;
     }
+    .productDesc{
+        position: static;
+        font-family: Oswald;
+        font-weight: 100;
+        font-size: 20px;
+    }
+    .col:nth-child(2),.col:last-child {
+        border-left: 0 
+    }
+    .col:nth-child(3),.col:last-child {
+        border-top: 0 
+    }
 }
-
-@media screen and (max-width: 480px){
-    /*    .productImage img{
-            height: 120px;
-        }
-        .productImage{
-            height:135px;
-        }*/
-} 
 @media screen and (min-width:0\0) {
     .product{
         display: block;
