@@ -60,14 +60,9 @@ a{
     clear: both;
 }
 .logo{
-/*    color: #fff;
-    font-size: 18px;
-    padding: 17px 40px;
-    background-color: #82001c;
-    border-radius: 5px;*/
-width: 158px;
-  height: 52px;
-  
+    width: 158px;
+    height: 52px;
+
 }
 .logo a{
     width: 100%;
@@ -87,10 +82,6 @@ width: 158px;
     padding-left: 11%;
     color: #82001c;
     height: 52px;
-/*    position: relative;
-    top: 8px;*/
-}
-.findBy{
 }
 .headerContent > div+div > div{
     padding-top: 10px;
@@ -112,7 +103,7 @@ width: 158px;
     left: 7px;
 }
 .fa{
-display: inline-block;
+    display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
@@ -153,8 +144,8 @@ display: inline-block;
     letter-spacing: 0.75px;
 }
 .separator{
-        padding: 0 8px;
-    }
+    padding: 0 8px;
+}
 h1{
     font-size: 50px;
     margin-top: 65px;
@@ -182,7 +173,6 @@ h2{
     list-style-type: none;
     padding: 10px 0;
     clear: both;
-
 }
 .filterContent, .filterArrow{
     display: inline-block;
@@ -207,7 +197,6 @@ h2{
 .leftContainer ul li+li{
     border-top: 1px solid gray
 }
-
 .rightContainer{
     display: inline-block;
     width: 79.5%;
@@ -241,59 +230,9 @@ h2{
     border-top: 0;
 }
 .productImage{
-    /* background-image: url("../images/DSC_5994.jpg");*/
     height: 146px;
     width: 100%;
 }
-/*
-.image1{
-    background: #ffffff url("../images/1.jpg") no-repeat right top;
-    background-size: contain;
-}
-.image2{
-    background: #ffffff url("../images/lupe-fiasco-product-red-converse-all-star-01.jpg") no-repeat right top;
-    background-size: contain;
-}
-.image3{
-    background: #ffffff url("../images/511485976.jpg") no-repeat right top;
-    background-size: contain;
-}
-.image4{
-    background: #ffffff url("../images/1358338402Intel_Reader_ProductShot.jpg") no-repeat right top;
-    background-size: contain;
-}
-.image5{
-    background: #ffffff url("../images/1467966472-logo-img-product-db.jpg") no-repeat right top;
-    background-size: contain;
-}
-.image6{
-    background: #ffffff url("../images/products-camp-kitchen-thumb.jpg") no-repeat right top;
-    background-size: contain;
-}
-.image7{
-    background: #ffffff url("../images/DSC_5994.jpg") no-repeat right top;
-    background-size: contain;
-}
-.image8{
-    background: #ffffff url("../images/phil-teds-sport-inline-auto-stop-stroller-in-midnight-3-4-view_product_large.jpg") no-repeat right top;
-    background-size: contain;
-}
-.image9{
-    background: #ffffff url("../images/oink-final.jpg") no-repeat right top;
-    background-size: contain;
-}
-.image10{
-    background: #ffffff url("../images/iPhone6_34FR_SpGry_iPhone6plus_34FL_SpGry_Homescreen_HERO.jpg") no-repeat right top;
-    background-size: contain;
-}
-.image11{
-    background: #ffffff url("../images/oculus-touch-product-394x263-c.jpg") no-repeat right top;
-    background-size: contain;
-}
-.image12{
-    background: #ffffff url("../images/design_of_useful_things.jpg") no-repeat right top;
-    background-size: contain;
-}*/
 .productImage img{
     max-width: 100%;
     height: 140px;
@@ -378,15 +317,15 @@ h2{
         margin: 0 20%;
     }
     .logoMobile div{
-    background: #fff;
-    color: #303030;
-    border-radius: 5px;
-    margin: 0 auto;
-    width: 120px;
-    text-align: center;
-    background: #82001c url("../images/logo_mobile.png") no-repeat;
-    background-size: contain;
-    height: 40px;
+        background: #fff;
+        color: #303030;
+        border-radius: 5px;
+        margin: 0 auto;
+        width: 120px;
+        text-align: center;
+        background: #82001c url("../images/logo_mobile.png") no-repeat;
+        background-size: contain;
+        height: 40px;
     }
     nav{
         position: relative;
@@ -475,12 +414,12 @@ h2{
 }
 
 @media screen and (max-width: 480px){
-/*    .productImage img{
-        height: 120px;
-    }
-    .productImage{
-        height:135px;
-    }*/
+    /*    .productImage img{
+            height: 120px;
+        }
+        .productImage{
+            height:135px;
+        }*/
 } 
 @media screen and (min-width:0\0) {
     .product{
