@@ -107,9 +107,6 @@ a{
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     padding-left: 5px;
 }
 .fa-search:before {
@@ -143,6 +140,7 @@ a{
     font-size: 12px;
     margin-top: 15px;
     letter-spacing: 0.75px;
+    color: #464646;
 }
 .separator{
     padding: 0 8px;
@@ -153,6 +151,7 @@ h1{
     margin-bottom: 25px;
     font-family: Oswald;
     font-weight: 500;
+    color: #464646;
 }
 h2{
     font-size: 14px;
@@ -196,12 +195,14 @@ h2{
     font-family: AvenirLTStd_Heavy;
 }
 .leftContainer ul li+li{
-    border-top: 1px solid gray
+    border-top: 1px solid #d4d4d2;
+    color: #464646;
 }
 .rightContainer{
     display: inline-block;
     width: 79.5%;
     float: left;
+    color: #464646;
 }
 .tableContainer{
     width: 100%;
@@ -220,7 +221,7 @@ h2{
 }
 .col{
     display: table-cell;
-    border:1px solid black;
+    border:1px solid #d4d4d2;
     padding: 10px 22px;
     width:25%;
     text-align: center;
@@ -239,7 +240,6 @@ h2{
     height: 140px;
 }
 .product{
-    display: table;
     position: relative;
     width: 100%;
 }
@@ -433,10 +433,5 @@ h2{
     }
     .col:nth-child(3),.col:last-child {
         border-top: 0 
-    }
-}
-@media screen and (min-width:0\0) {
-    .product{
-        display: block;
     }
 }
